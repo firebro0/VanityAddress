@@ -15,7 +15,7 @@ console.log(`Address: ${hdNode.address} | Private Key: ${hdNode.privateKey} | Me
 
 let basePath = "m/44'/60'/0'/0";
 let wallets = [];
-const regex = /^0x1.*3$/
+const regex = /^0x111.*333$/
 console.log('Regex:', regex);
 
 var isValid = false
