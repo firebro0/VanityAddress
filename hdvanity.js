@@ -1,15 +1,14 @@
 import { ethers } from "ethers";
 
 var HDwallet
-const regex = /^0x1980.*0313$/ // 表达式
+const regex = /^0x111.*333$/
 console.log('Regex:', regex);
 var isValid = false
 while(!isValid){
-    HDwallet = ethers.HDNodeWallet.createRandom() // 随机生成钱包，安全
-    isValid = regex.test(HDwallet.address) // 检验正则表达式
+    HDwallet = ethers.HDNodeWallet.createRandom()
+    isValid = regex.test(HDwallet.address)
     //console.log(HDwallet.address)
 }
 
-// 打印
 //console.log(HDwallet)
 console.log(`Address: ${HDwallet.address} | Private Key: ${HDwallet.privateKey} | Memo：${HDwallet.mnemonic.phrase}`);
